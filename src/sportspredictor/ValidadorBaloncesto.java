@@ -1,6 +1,5 @@
 package sportspredictor;
 
-import java.time.*;
 import java.util.*;
 
 public class ValidadorBaloncesto implements ValidadorPrediccion {
