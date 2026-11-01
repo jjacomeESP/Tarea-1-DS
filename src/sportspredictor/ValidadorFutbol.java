@@ -1,6 +1,5 @@
 package sportspredictor;
 
-import java.time.*;
 import java.util.*;
 
 public class ValidadorFutbol implements ValidadorPrediccion {
@@ -9,7 +8,6 @@ public class ValidadorFutbol implements ValidadorPrediccion {
     }
     private boolean marcador(Map<String,String> d) {
         if(d==null || !numero(d.get("local")) || !numero(d.get("visitante"))) return false;
-        int a=Integer.parseInt(d.get("local")), b=Integer.parseInt(d.get("visitante"));
         return true;
     }
     public boolean validar(CategoriaPronostico c, Map<String,String> d) {
